@@ -1,0 +1,32 @@
+{
+  "name": "@protocolguard/ai-engine",
+  "version": "1.0.0",
+  "description": "AI engine for ProtocolGuard - generates and verifies Solidity upgrades",
+  "main": "dist/api/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/api/server.js",
+    "dev": "ts-node src/api/server.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "ethers": "^6.11.0",
+    "express": "^4.18.0",
+    "winston": "^3.13.0",
+    "diff": "^5.2.0",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.0",
+    "@types/diff": "^5.2.0",
+    "@types/cors": "^2.8.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  }
+}
